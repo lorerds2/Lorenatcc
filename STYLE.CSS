@@ -1,0 +1,25 @@
+
+img {
+    border-radius: 5%;
+
+    border-image-width: 50;
+
+    text-align: center;
+
+}
+
+#imagem{
+    text-align: center;
+}
+    
+    header {
+    
+    background-color: rgb(239, 240, 227);
+    
+    color: #0d0c0c;
+    
+    padding: 10px;
+    
+    text-align: center;
+    
+    }
