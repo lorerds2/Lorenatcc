@@ -4,7 +4,7 @@ html
 
 p {
 
-    padding: 0,5%;
+padding: 0,5%;
         
     text-align: justify;
 }
@@ -14,23 +14,4 @@ p {
 
 
     text-align: justify;
-}
-
-
-img {
-    text-align: center;
-    border-radius: 5%;
-
-    border-image-width: 400;
-
-    text-align: center;
-}
-
-#imagem{
-    text-align: center;
-    border-radius: 5%;
-
-    border-image-width: 400;
-
-    text-align: center;
 }
