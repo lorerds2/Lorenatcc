@@ -1,58 +1,155 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guia de Viagens</title>
-    <link rel="stylesheet" href="styles.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
 </head>
 <body>
-    <header style="background-image: url('https://as2.ftcdn.net/v2/jpg/01/09/60/11/1000_F_109601187_QVo9iJLPJc3HqZOcgJBk4daB86hgdbdu.jpg');">
-        <h1>Guia de Viagens</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#destinos">Destinos</a></li>
-            <li><a href="#hospedagem">Hospedagem</a></li>
-            <li><a href="#atividades">Atividades</a></li>
-            <li><a href="#dicas">Dicas</a></li>
-        </ul>
-    </nav>
-    <section id="destinos">
-        <h2>Destinos</h2>
-        <p>Descrição dos destinos...</p>
-    </section>
-    <section id="hospedagem">
-        <h2>Hospedagem</h2>
-        <p>Opções de hospedagem...</p>
-    </section>
-    <section id="atividades">
-        <h2>Atividades</h2>
-        <p>Atividades recomendadas...</p>
-    </section>
-    <section id="brazil" style="background-image: url('https://as2.ftcdn.net/v2/jpg/01/09/60/11/1000_F_109601187_QVo9iJLPJc3HqZOcgJBk4daB86hgdbdu.jpg');">
-        <h2>Brazil</h2>
-        <p>Descrição do Brazil...</p>
-    </section>
-    <section id="ilhabela" style="background-image: url('https://imgmd.net/images/c_limit%2Cw_1200/v1/guia/1684034/ilhabela-229-c.jpg');">
-        <h2>Ilhabela</h2>
-        <p>Descrição de Ilhabela...</p>
-    </section>
-    <section id="balneario-camboriu" style="background-image: url('https://imgmd.net/image/upload/c_limit%2Cw_1200/v1/guia/2917815.jpg');">
-        <h2>Balneário Camboriú</h2>
-        <p>Descrição de Balneário Camboriú...</p>
-    </section>
-    <section id="salvador" style="background-image: url('https://imgmd.net/images/c_limit%2Cw_1200/v1/guia/1700180/salvador-16-c.jpg');">
-        <h2>Salvador</h2>
-        <p>Descrição de Salvador...</p>
-    </section>
-    <section id="dicas">
-        <h2>Dicas</h2>
-        <p>Dicas úteis para a viagem...</p>
-    </section>
-    <footer>
-        <p>&copy; 2024 Guia de Viagens</p>
-    </footer>
-    <script src="scripts.js"></script>
+
+<div class="header">
+  <h1>Guia de Viagens</h1>
+</div>
+
+<div class="topnav">
+  <a href="#brazil">Brazil</a>
+  <a href="#ilhabela">Ilhabela</a>
+  <a href="#balneario-camboriu">Balneário Camboriú</a>
+  <a href="#salvador">Salvador</a>
+  <a href="#dicas" style="float:right">Dicas</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Brazil</h2>
+      <p>Descrição do Brazil...</p>
+    </div>
+    <div class="card">
+      <h2>Ilhabela</h2>
+      <p>Descrição de Ilhabela...</p>
+    </div>
+    <div class="card">
+      <h2>Balneário Camboriú</h2>
+      <p>Descrição de Balneário Camboriú...</p>
+    </div>
+    <div class="card">
+      <h2>Salvador</h2>
+      <p>Descrição de Salvador...</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Dicas</h2>
+      <p>Dicas úteis para a viagem...</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
 </body>
 </html>
