@@ -43,17 +43,6 @@ body {
   color: black;
 }
 
-.leftcolumn {
-  float: left;
-  width: 70%;
-}
-
-.rightcolumn {
-  float: left;
-  width: 30%;
-  padding-left: 20px;
-}
-
 .row::after {
   content: "";
   display: table;
@@ -61,9 +50,9 @@ body {
 }
 
 @media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {
+  .topnav a {
+    float: none;
     width: 100%;
-    padding: 0;
   }
 }
 
@@ -94,6 +83,17 @@ body {
 
 .card ul li {
   padding: 8px 0;
+}
+
+.leftcolumn {
+  float: left;
+  width: 70%;
+}
+
+.rightcolumn {
+  float: right;
+  width: 30%;
+  padding-left: 20px;
 }
 
 </style>
