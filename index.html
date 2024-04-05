@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title> GUIA DE VIAGENS PELO BRASIL</title>
+<title>GUIA DE VIAGENS PELO BRASIL</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 * {
@@ -43,15 +43,14 @@ body {
   color: black;
 }
 
-.leftcolumn {   
+.leftcolumn {
   float: left;
-  width: 75%;
+  width: 70%;
 }
 
 .rightcolumn {
   float: left;
-  width: 25%;
-  background-color: #f1f1f1;
+  width: 30%;
   padding-left: 20px;
 }
 
@@ -62,42 +61,39 @@ body {
 }
 
 @media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
+  .leftcolumn, .rightcolumn {
     width: 100%;
     padding: 0;
   }
 }
-@media screen and (max-width: 400px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
 }
 
-p {
+.card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.card h2 {
+  color: #333;
+}
+
+.card p {
+  color: #666;
   text-align: justify;
 }
 
-li {
-  text-align: justify;
-}
-img:hover {
-  animation: shake 0.5s;
-  animation-iteration-count: infinite;
+.card ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+.card ul li {
+  padding: 8px 0;
 }
 
 </style>
@@ -198,25 +194,24 @@ img:hover {
       <p>Vitória é a capital do estado do Espírito Santo, localizada na região sudeste do Brasil. Com suas belas praias, sua baía deslumbrante e sua rica história, é um destino que oferece uma variedade de experiências para os visitantes. A cidade é conhecida por seus pontos turísticos, como o Convento da Penha, o Parque da Pedra da Cebola e o Museu Vale. Além disso, Vitória possui uma cultura gastronômica diversificada, com influências da culinária capixaba, italiana e portuguesa. Com sua atmosfera acolhedora e suas paisagens deslumbrantes, Vitória é um destino encantador para quem busca relaxamento e aventura.</p>
     </div>
 
-  <div class="rightcolumn">
-    <div class="card">
-      <h2>Sobre este guia</h2>
-      <p>Este guia apresenta alguns dos destinos mais incríveis para se visitar no Brasil. Cada destino oferece uma experiência única, seja pela beleza natural, pela história cultural ou pela diversidade gastronômica. Esperamos que este guia inspire você a explorar as maravilhas do nosso país e a viver momentos inesquecíveis.</p>
+    <div class="rightcolumn">
+      <div class="card">
+        <h2>Sobre este guia</h2>
+        <p>Este guia apresenta alguns dos destinos mais incríveis para se visitar no Brasil. Cada destino oferece uma experiência única, seja pela beleza natural, pela história cultural ou pela diversidade gastronômica. Esperamos que este guia inspire você a explorar as maravilhas do nosso país!</p>
+      </div>
+      
+      <div class="card" id="dicas">
+        <h2>Dicas para Viajar pelo Brasil</h2>
+        <ul>
+          <li>Familiarize-se com o clima local e traga roupas adequadas.</li>
+          <li>Esteja ciente das questões de segurança e tome precauções.</li>
+          <li>Experimente a culinária local e não deixe de provar os pratos típicos de cada região.</li>
+          <li>Respeite a natureza e as comunidades locais durante sua viagem.</li>
+          <li>Tenha sempre um plano de viagem e esteja preparado para imprevistos.</li>
+        </ul>
+      </div>
     </div>
-
-    <div class="card" id="dicas">
-      <h2>Dicas para Viajar pelo Brasil</h2>
-      <p>Aqui estão algumas dicas úteis para tornar sua viagem pelo Brasil ainda mais agradável:</p>
-      <ul>
-        <li>Familiarize-se com o clima local e traga roupas adequadas, especialmente se estiver visitando regiões com climas distintos, como o litoral e o interior. </li>
-        <li>Esteja ciente das questões de segurança e tome precauções, como evitar exibir objetos de valor e ficar atento aos seus arredores, especialmente em áreas urbanas movimentadas. </li>
-        <li>Experimente a culinária local, que é diversificada e deliciosa em todo o país. Não deixe de provar pratos típicos de cada região que visitar. </li>
-        <li>Respeite a cultura e os costumes locais. Cada região do Brasil tem suas próprias tradições e etiquetas sociais, então esteja aberto para aprender e se adaptar. </li>
-        <li>Planeje com antecedência suas atividades e passeios, especialmente durante períodos de alta temporada, para evitar contratempos e garantir uma experiência mais tranquila.  </li>
-      </ul>
-    </div>
-
-
-</div>
-</body>
-</html>
+  </div>
+  
+  </body>
+  </html>
