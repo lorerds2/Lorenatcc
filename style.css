@@ -111,7 +111,13 @@
     text-align: justify;
   }
   
-  
+  li{
+    text-align: justify;
+  }
+
+
+
+
   img:hover {
     /* Start the shake animation and make the animation last for 0.5 seconds c
     animation: shake 0.5s;
