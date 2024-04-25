@@ -119,10 +119,10 @@
 
 
   img:hover {
-    /* Start the shake animation and make the animation last for 0.5 seconds c
+    Start the shake animation and make the animation last for 0.5 seconds c
     animation: shake 0.5s;
   
-    /* When the animation is finished, start again */
+  When the animation is finished, start again *
     animation-iteration-count: infinite;
   }
   
@@ -138,5 +138,4 @@
     80% { transform: translate(-1px, -1px) rotate(1deg); }
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
-  
   }
