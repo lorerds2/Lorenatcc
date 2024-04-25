@@ -25,8 +25,18 @@
     100% { transform: translate(1px, -2px) rotate(-1deg); }
   }
   </style>
-  
+
 </head>
+<title> MANIPULAÇÃO do DOM</title>
+<script>
+  let count = 0;
+
+  function incrementCount () {
+    count++;
+    document . getELementbyid("count-display").textContent = count;
+  }
+</script>
+
 <body>
 <div class="header">
   <h1>Guia de Viagens</h1>
