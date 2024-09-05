@@ -133,6 +133,67 @@ img:hover {
   li{
     text-align: justify;
   }
+  
+/* Estilo para o formulário */
+.card#formulario {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card#formulario h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.card#formulario label {
+  display: block;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.card#formulario input[type="text"],
+.card#formulario input[type="email"],
+.card#formulario textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.card#formulario textarea {
+  resize: vertical;
+}
+
+.card#formulario input[type="submit"] {
+  background-color: #4CAF50; /* Verde */
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card#formulario input[type="submit"]:hover {
+  background-color: #45a049; /* Verde escuro */
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
 
 
 
