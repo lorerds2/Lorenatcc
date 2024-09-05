@@ -133,7 +133,7 @@ img:hover {
   li{
     text-align: justify;
   }
-  
+
 /* Estilo para o formulário */
 .card#formulario {
   background-color: #ffffff;
@@ -195,6 +195,37 @@ img:hover {
   margin-top: 10px;
 }
 
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 600px) {
+  .header h1 {
+    font-size: 36px;
+  }
+
+  .leftcolumn, .rightcolumn {
+    float: none;
+    width: 100%;
+    padding: 0;
+  }
+
+  .rightcolumn {
+    padding-left: 0;
+  }
+
+  .topnav a {
+    float: none;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .fakeimg {
+    padding: 15px;
+  }
+}
 
 
 
